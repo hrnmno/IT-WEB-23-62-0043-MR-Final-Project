@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Assignment</title>
+   
+</head>
+
+<style>
+    
+    body{
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    }
+   .BTN-TRY{
+    display: flex;
+    flex-direction: column;
+
+   }
+   .BTN-TRY button{
+    font-family: inherit;
+    padding: 10px 30px;
+    outline:none;
+    border: 1px solid rgb(77, 83, 158);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+    color: #525ffb;
+    border-radius: 40px;
+    }
+    #taskia{
+        color: #525ffb;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 170px;
+    }
+    
+     h1{
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 500;
+        text-align: left;
+        color: black;
+    }
+    p{
+        width: 90%;
+        font-weight: 400;
+        margin-top: 15px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #395158;
+        font-size: smaller;
+    }
+    .form1{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        text-align: center;
+        justify-content:space-between;
+          
+    }
+    .form1 input{
+        width: 220px;
+        border-color: #d1cfc7;
+        font-weight: 300;
+        border-radius: 40px; 
+        opacity: 20;
+        font-size: 13px;
+        line-height: 45px;
+    }
+
+    .form1 button{
+        border:#13191b;
+        font-weight: 500;
+        outline: none;
+        border-radius: 40px; 
+        opacity: 36;
+        font-size: 18px;
+        background: #0e133b;
+        line-height: 30px;
+        width: 150px;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    .task-container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-left:0%;
+ 
+   
+   }
+   .task-container .task{
+    position:relative;
+    width: 500px;
+    height: 400px;
+    margin-top: 30px;
+    padding: 0px 1 px;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 20px;
+      }
+
+   .task-container .task1{
+    position:relative;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   
+   }
+   
+   #para{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .services{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+   }
+   .heaed-services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+   
+
+   .card-container{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding-left:0%;
+  
+   
+   }
+   .card-container .card{
+    position:relative;
+    width: 300px;
+    height: 400px;
+    background: #6f74df;
+    padding: 0px 1 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+   }
+
+   .card-container .card1{
+    border-radius: 15px;
+    margin-top: 100px;
+    position:relative;
+    width: 300px;
+    height: 400px;
+    background: #b6ccb3;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+   }
+   .card-container .card2{
+    border-radius: 15px;
+    position:relative;
+    width: 300px;
+    height: 400px;
+    background: #e4c942;
+    margin: 0px 0px;
+    padding: 0px 0 px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+
+   .card-text{
+    padding:30px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+  
+    align-items: center;
+ 
+   }
+
+   .manage-container{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        padding-left:0%;
+        margin-top: 100px;
+       
+       }
+       .manage-container-card{
+        position:relative;
+        width: 500px;
+        height: 300px;
+        margin-top: 50px;
+        background: #292c6b;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 30px;
+       
+        
+       }
+    
+       .card-manage{
+        position:relative;
+        width: 500px;
+        height: 350px;
+        margin-left: 30px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+       }
+
+       .manage-text{
+
+       }
+    button{
+    font-family: inherit;
+    padding: 10px 30px;
+    border: 1px #525ffb;
+    font-weight: 700;
+    font-size: 20px;
+       }
+
+    
+       .wf-container{
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            padding-left:0%;
+            margin-top: 100px;
+            margin-bottom: 40px;
+           
+           }
+           .wf-card{
+            position:relative;
+            width: 500px;
+            height: 400px;
+            margin-top: 100px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            text-align: left;
+            margin-bottom: 40px;
+           
+            
+           }
+        
+           .wf-card-card{
+            position:relative;
+            width: 300px;
+            height: 350px;
+            margin-left: 30px;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+          
+           }
+           .container-trust{
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+            padding-left:0%;
+          
+           
+           }
+           .Trust-card{
+            position:relative;
+            width: 100px;
+            height: 200px;
+            background: #5256a3;
+            padding: 0px 1 px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+            border-radius: 15px;
+            margin-top: 20px;
+            
+           }
+        
+           .trust-card1{
+            border-radius: 15px;
+            margin-top: 150px;
+            position:relative;
+            width: 100px;
+            height: 200px;
+            margin-left: 30px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          
+           }
+           .tust-card2{
+            margin-top: 200px;
+            border-radius: 15px;
+            position:relative;
+            width: 300px;
+            height: 300px;
+            background: #64560d;
+            margin: 0px 0px;
+            padding: 0px 0 px;
+            display: flex;
+            flex-direction: column;
+          
+           }
+    
+
+
+    .Foot-container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-left:0%;
+ 
+   
+   }
+   .Foot-card{
+    position:relative;
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+    padding: 0px 1 px;
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2vw;
+   
+      }
+
+   #num{
+    color: #292c6b;
+    font-size: 8vw;
+    text-align: left;
+   }
+  
+
+</style>
+<body>
+    <header>
+        <div class="Taskia">
+            <H1 id="taskia">Taskia</H1>
+        </div>
+        <div class="BTN-TRY">
+            <button> Try free</button>
+        </div>
+    </header>
+
+ 
+
+    <section>
+        <div class="task-container">
+            <div class="task1">
+                    <div class="task-text">
+                        <h1>Task Management and lists Tool</h1>
+                        <p id="para">We believe that designing products and services in close partnership with our clients is the only way to have a real impact on their business. </p>
+                        <form>
+                            <div class="form1">
+                            <input type="email" placeholder="Name@company.com">
+                            <button type="submit">Try it free </button>
+                        </div>
+                        </form>
+            </div>
+            </div>
+            <div class="task">
+                <img src="hero image.jpg">
+        </div>
+           </div>
+        </section>
+
+    <section class="services">
+        <div class="head-services">
+            <h1>Featured Service that We Provide</h1>
+        </div>
+    </section>
+    <section>
+        <div class="card-container">
+            <div class="card">
+                    <img src="Image 3.png">
+                    <div class="card-text">
+                    <h3>Keep tasks in one place</h3>
+                    <p>time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
+                </div>
+            </div>
+            <div class="card1">
+                    <img src="Image 2.png">
+                    <div class="card-text">
+                    <h3>Keep tasks in one place</h3>
+                    <p>Save time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
+            </div>
+            </div>
+            <div class="card2">
+                    <img src="Image 1.png">
+                    <div class="card-text">
+                    <h3>Keep tasks in one place</h3>
+                    <p>Save time, avoid losing work and information, delegate, and track tasks to stay on schedule</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="manage-container">
+            <div class="manage-container-card">
+                    <img src="Image 8.jpg">
+            </div>
+            <div class="card-manage">
+                    <div class="manage-text">
+                        <h2>Why do you need task management</h2>
+                        <p id="para">Do you waste time organizing sticky notes, searching your email and apps for to-dos, and figuring out what to work on first? Then you need one solution to prioritize your tasks, manage your time, and meet your deadlines.</p>
+                        <button>Learn more</button>
+            </div>
+           </div>
+        </section>
+
+        <section>
+            <div class="wf-container">
+                <div class="wf-card">
+                        <div class="WF-text">
+                            <h1>Seamless Team Workflow & Efficient</h1>
+                            <p id="para">Do you waste time organizing sticky notes, searching your email and apps for to-dos, and figuring out what to work on first? Then you need one solution to prioritize your tasks, manage your time, and meet your deadlines. </p>
+                            <form>
+                                <div class="form1">
+                                <img src="Image 6.jpg" height="50px" width="80px">
+                                <img src="Image 9.jpg" height="50px" width="80px">
+                            </div>
+                            </form>
+                </div>
+                </div>
+                <div class="wf-card-card">
+                    <img src="Image 7.jpg" height="350px" width="480px">
+            </div>
+               </div>
+            </section>
+
+            <section class="services">
+                <div class="head-services">
+                    <h1>Trust us and feel free to try our service</h1>
+                </div>
+            </section>
+
+      
+
+        <section>
+            <div class="container-trust">
+                <div class="Trust-card">
+                        <img src="Image 4.jpg" width="200px" height="200px">
+                    
+                </div>
+                <div class="trust-card1">
+                        <h3 id="num">100000</h3>
+                       
+                </div>
+                <div class="tust-card2">
+                        <img src="Image 5.jpg">
+                      
+                </div>
+            </div>
+        </section>
+
+
+<hr>
+
+<footer>
+    <div class="Foot-container">
+        <div class="Foot-card">
+                <div class="Foot-text">
+                    <h1>Get better work done</h1>
+                    <p>See why millions of people across 195 countries use Dash. </p>
+                    <form>
+                        <div class="form1">
+                        <input type="email" placeholder="Name@company.com">
+                        <button type="submit">Try it free </button>
+                    </div>
+                    </form>
+        </div>
+        </div>
+        </div>
+    </footer>
+  
+</body>
+</html>
+
+

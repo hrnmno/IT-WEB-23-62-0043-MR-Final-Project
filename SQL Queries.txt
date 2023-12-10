@@ -1,0 +1,28 @@
+A). Get all the information of all Students. 
+
+SELECT * FROM Student;
+
+Student_ID	Name	City	Course_ID
+1	Kasun Gamage	Kandy     	2
+2	Daniel Sam	Jaffna    	3
+3	Hansi Silva	Colombo   	1
+4	Ranidu Herath	Matara    	3
+5	Praneeth Wijesinghe	Kandy     	4
+6	Nuwani Herath	Rathnapura	1
+
+B).Select student id, name and city from students who are from 'Kandy'
+
+SELECT Student_ID,Name,City FROM Student WHERE City='Kandy';
+
+Student_ID	Name	City
+1	Kasun Gamage	Kandy     
+5	Praneeth Wijesinghe	Kandy     
+
+C).Update the City a 'Galle' of the student whose id equals to 4. 
+
+
+UPDATE Student SET City='Galle' WHERE Student_ID=4;
+
+D).Get all the information of all students with their course names. 
+
+
